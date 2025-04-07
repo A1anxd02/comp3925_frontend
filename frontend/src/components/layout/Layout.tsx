@@ -6,24 +6,26 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
+// Layout.tsx
 export default function Layout({ children }: LayoutProps) {
-  return (
-    <Box sx={{ 
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
-      <Navbar />
-      <Box component="main" sx={{ 
-        flexGrow: 1,
-        p: 3,
-        maxWidth: 1200,
-        mx: 'auto',
-        width: '100%'
+    return (
+      <Box sx={{ 
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column'
       }}>
-        {children}
+        <Navbar />
+        <Box component="main" sx={{
+          flexGrow: 1,
+          p: 4, // Added consistent padding for spacing
+          width: '100%',
+          mx: 'auto'
+        }}>
+          {children}
+        </Box>
+
+        <Footer />
       </Box>
-      <Footer />
-    </Box>
-  );
-}
+    );
+  }
+
