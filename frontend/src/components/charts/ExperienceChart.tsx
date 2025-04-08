@@ -86,7 +86,7 @@ export default function ExperienceChart({ data }: ExperienceChartProps) {
             x: {
               stacked: true,
               grid: {
-                display: false, // Hide the x-axis grid lines
+                display: false, 
               }
             },
             y: { 

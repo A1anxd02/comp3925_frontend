@@ -1,4 +1,4 @@
-// tsconfig.node.json (for Vite config only)
+
 {
   "compilerOptions": {
     "composite": true,

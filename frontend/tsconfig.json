@@ -1,4 +1,4 @@
-// tsconfig.json (for your React components)
+
 {
   "compilerOptions": {
     "target": "ESNext",

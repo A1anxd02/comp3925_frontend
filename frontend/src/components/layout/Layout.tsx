@@ -17,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
         <Navbar />
         <Box component="main" sx={{
           flexGrow: 1,
-          p: 4, // Added consistent padding for spacing
+          p: 4, 
           width: '100%',
           mx: 'auto'
         }}>

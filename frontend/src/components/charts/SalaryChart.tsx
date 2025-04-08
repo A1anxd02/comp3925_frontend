@@ -37,10 +37,10 @@ export default function SalaryChart({ data }: SalaryChartProps) {
             {
               label: '20,000 or Below',
               data: data.map(item => parseFloat(item['20000_or_Below'] || '0')),
-              backgroundColor: 'rgba(255, 99, 132, 0.2)', // Softened background color
+              backgroundColor: 'rgba(255, 99, 132, 0.2)', 
               borderColor: 'rgba(255, 99, 132, 1)',
               borderWidth: 1,
-              pointRadius: 6,  // Increased point size for visibility
+              pointRadius: 6,  
               pointStyle: 'circle', // Circular points
             },
             {
@@ -60,7 +60,25 @@ export default function SalaryChart({ data }: SalaryChartProps) {
               borderWidth: 1,
               pointRadius: 6,
               pointStyle: 'circle',
-            }
+            },
+            {
+                label: '50,001-90,000',
+                data: data.map(item => parseFloat(item['50001_90000'] || '0')),
+                backgroundColor: 'rgba(75, 192, 192, 0.2)', 
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                pointRadius: 6,
+                pointStyle: 'circle',
+              },
+              {
+                label: '90,000 - or More',
+                data: data.map(item => parseFloat(item['90001_or_More'] || '0')),
+                backgroundColor: 'rgba(148, 0, 211, 0.2)', 
+                borderColor: 'rgba(148, 0, 211, 1)',      
+                borderWidth: 2,                           
+                pointRadius: 7,                           
+                pointStyle: 'circle',
+              }
           ]
         }}
         options={{
@@ -76,17 +94,17 @@ export default function SalaryChart({ data }: SalaryChartProps) {
                 lineWidth: 0.5, // Thin grid lines for a cleaner look
               },
               pointLabels: {
-                font: { size: 14, weight: 'bold' }, // Adjust font size and weight for better readability
+                font: { size: 14, weight: 'bold' }, // font size and weight for better readability
                 color: '#303f9f' // Set point label color for consistency
               }
             }
           },
           plugins: {
             tooltip: {
-              backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark background for tooltips for contrast
-              titleColor: '#fff', // White title text
+              backgroundColor: 'rgba(0, 0, 0, 0.7)', 
+              titleColor: '#fff', 
               bodyColor: '#fff', // White body text
-              padding: 10, // More padding inside tooltips
+              padding: 10, 
             },
             legend: {
               labels: {

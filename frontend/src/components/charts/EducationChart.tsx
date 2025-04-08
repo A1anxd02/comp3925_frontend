@@ -105,13 +105,13 @@ export default function EducationChart({ data }: EducationChartProps) {
                 }
               },
               grid: {
-                color: 'rgba(0, 0, 0, 0.1)', // Light grid lines for readability
-                lineWidth: 0.5 // Thin grid lines
+                color: 'rgba(0, 0, 0, 0.1)', 
+                lineWidth: 0.5 
               }
             },
             x: {
               grid: {
-                display: false, // Hide x-axis grid for a cleaner look
+                display: false, 
               }
             }
           },
