@@ -6,7 +6,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-// Layout.tsx
+
 export default function Layout({ children }: LayoutProps) {
     return (
       <Box sx={{ 
